@@ -1,22 +1,94 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Vazirmatn;
     background-color: #c4def7;
 }
-.container{
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgb(179, 189, 199);
+    padding: 10px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.RightToLeft {
+    direction: rtl;
+    margin: 16px;
+}
+
+.container {
     max-width: 1124px;
     margin: 0 auto;
+    direction: rtl;
 }
+
+.display-flex {
+    display: flex;
+    gap: 5px;
+}
+
+.todolist {
+    width: 25%;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.hieght {
+    height: 77%;
+    border-bottom: 1px solid rgb(179, 189, 199);
+}
+
+.SingelTodoList {
+    margin: 10px;
+    padding: 4px;
+    align-items: center;
+    border: 1px solid rgb(179, 189, 199);
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+.form-list {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    border-radius: 8px;
+    margin: 10px;
+    border: 1px solid rgb(179, 189, 199);
+}
+
+.input-list {
+    width: 90%;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    padding: 0 8px;
+    transition: 0.3s;
+}
+
+.manege {
+    width: 50%;
+}
+
+.information {
+    width: 25%;
+}
+
 @font-face {
     font-family: 'Vazirmatn';
     src: url('../Font/vazirmatn/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2 supports variations'),
-         url('../Font/vazirmatn/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2-variations');
+        url('../Font/vazirmatn/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2-variations');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
-  
