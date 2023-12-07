@@ -8,11 +8,14 @@ body {
     font-family: Vazirmatn;
     background-color: #c4def7;
 }
-
+a{
+    text-decoration: none;
+}
+.color-gray{
+    color:gray ;
+}
 h2 {
     font-size: 1.5rem;
-    border-bottom: 1px solid rgb(179, 189, 199);
-    padding: 10px;
 }
 
 p {
@@ -23,7 +26,6 @@ p {
     direction: rtl;
     margin: 16px;
 }
-
 .container {
     max-width: 1124px;
     margin: 0 auto;
@@ -47,6 +49,12 @@ p {
     border-bottom: 1px solid rgb(179, 189, 199);
 }
 
+.title-todolist{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(179, 189, 199);
+    padding: 10px;
+}
 .SingelTodoList {
     margin: 10px;
     padding: 4px;
@@ -67,23 +75,72 @@ p {
     border: 1px solid rgb(179, 189, 199);
 }
 
-.input-list {
-    width: 90%;
+.input-list , .input-sereach {
     height: 30px;
     border: none;
+    outline: none;
     font-weight: bold;
     padding: 0 8px;
     transition: 0.3s;
+}
+.input-sereach{
+    min-width: 350px;
+    background-color:rgb(222, 225, 228);
 }
 
 .manege {
     width: 50%;
 }
-
+.sereach{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom:16px ;
+}
+.all-sreach{
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(222, 225, 228);
+    padding: 12px;
+    border-radius: 30px;
+}
+.icon{
+    padding: 5px 15px;
+    background-color: #3c5190;
+    color: white;
+    border-radius: 15px;
+}
+.align-center{
+    align-items: center;
+}
 .information {
     width: 25%;
 }
-
+.applications{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.application{
+    width: 15%;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 30px;
+    color:#3c5190 ;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.application:hover{
+    border: 1px solid lightseagreen;
+}
+.img-application{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
 @font-face {
     font-family: 'Vazirmatn';
     src: url('../Font/vazirmatn/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2 supports variations'),
