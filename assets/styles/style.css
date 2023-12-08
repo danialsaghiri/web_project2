@@ -11,20 +11,26 @@ body {
 a{
     text-decoration: none;
 }
+.justy-center{
+    justify-content: center;
+}
 .color-gray{
     color:gray ;
 }
-h2 {
+h1 {
+    font-weight: bolder;
     font-size: 1.5rem;
 }
-
-p {
-    font-size: 1rem;
+h2{
+    font-size: 2rem;
+    margin: 5px;
 }
-
+p{
+    font-size: 15px;
+}
 .RightToLeft {
     direction: rtl;
-    margin: 16px;
+    margin: 8px;
 }
 .container {
     max-width: 1124px;
@@ -34,7 +40,6 @@ p {
 
 .display-flex {
     display: flex;
-    gap: 5px;
 }
 
 .todolist {
@@ -48,7 +53,26 @@ p {
     height: 77%;
     border-bottom: 1px solid rgb(179, 189, 199);
 }
-
+.bxs-low-vision{
+    padding: 5px;
+    background-color: rgb(222, 225, 228);
+    border-radius: 10px;
+    color: #3c5190;
+    cursor: pointer;
+}
+.bx-edit-alt , .bx-trash{
+    margin-top: 5px;
+    cursor: pointer;
+}
+.input-check{
+    appearance: none;
+    height: 10px;
+    border: 1px solid green;
+    padding: 5px;
+    background-color: lightgreen;
+    margin:5px 0 0 3px;
+    border-radius: 2px;
+}
 .title-todolist{
     justify-content: space-between;
     align-items: center;
@@ -65,7 +89,7 @@ p {
 }
 
 .form-list {
-
+    box-shadow: 1px 1px 10px gray;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,35 +111,33 @@ p {
     min-width: 350px;
     background-color:rgb(222, 225, 228);
 }
-
 .manege {
     width: 50%;
 }
 .sereach{
     width: 100%;
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 15px;
+    border-radius: 15px;
     margin-bottom:16px ;
 }
 .all-sreach{
     justify-content: space-between;
     align-items: center;
+    box-shadow: 1px 1px 10px gray;
     background-color: rgb(222, 225, 228);
     padding: 12px;
     border-radius: 30px;
 }
-.icon{
+.bx-search-alt-2{
     padding: 5px 15px;
     background-color: #3c5190;
     color: white;
+    cursor: pointer;
     border-radius: 15px;
 }
 .align-center{
     align-items: center;
-}
-.information {
-    width: 25%;
 }
 .applications{
     width: 100%;
@@ -140,6 +162,56 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+.information {
+    width: 25%;
+    background-color: white;
+    height: 270px;
+    border-radius: 15px;
+}
+.bx-cloud-snow{
+    font-size: 2rem;
+    color: #3565ae;
+}
+.time , .weather{
+    width: 50%;
+    height: 65%;
+    text-align: center;
+    border-bottom:1px solid rgb(179, 189, 199);
+    border-left: 1px solid rgb(179, 189, 199);
+}
+.weather{
+    border-left: none;
+}
+.miladi{
+    width: 50%;
+    color: gray;
+    border-right: 1px solid rgb(179, 189, 199);
+}
+.oghatvatimer{
+    justify-content: space-around;
+}
+.timer , .oghat , .pishbini{
+    border: 1px solid rgb(179, 189, 199);
+    padding: 5px;
+    border-radius: 15px;
+    color:rgb(102, 134, 168) ;
+    cursor: pointer;
+}
+.pishbini{
+    width: 60%;
+    margin: 0 auto;
+}
+.weather > div:last-child{
+    margin-top: 14px;
+}
+.weather > p:nth-child(3){
+    margin-top: 22px;
+}
+.font1{
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: bolder;
 }
 @font-face {
     font-family: 'Vazirmatn';
