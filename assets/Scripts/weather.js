@@ -22,10 +22,10 @@ const weather=async ()=>{
 weather();
 const creatimg=()=>{
     if(new Date().getHours() >= 5 && new Date().getHours()<=18){
-        damaelement.innerHTML+=`<img src="/assets/Images/sun.png" class="weather__img">`
+        damaelement.innerHTML+=`<img src="./assets/Images/sun.png" class="weather__img">`
     }
     else{
-        damaelement.innerHTML+=`<img src="/assets/Images/night.png" class="weather__img">`;
+        damaelement.innerHTML+=`<img src="./assets/Images/night.png" class="weather__img">`;
     }
 }
 function farsi_number(ennum){
