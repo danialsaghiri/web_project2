@@ -24,7 +24,7 @@ h1 {
     font-size: 1.5rem;
 }
 h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 5px;
 }
 p{
@@ -222,6 +222,7 @@ ul {
 #islamic,#miladi{
     margin-top: 8px;
     font-size: 10px;
+    width: 45%;
     font-weight: bolder;
     color: gray;
 }

@@ -64,14 +64,26 @@ function data_get(){
 
 
 
-
+function farsi_number(ennum){
+    const fanum="۰۱۲۳۴۵۶۷۸۹";
+    let arr=[];
+    let result="";
+    for(let i=0;i<ennum.length;i++){
+        arr[i]=ennum.slice(i,i+1);
+        arr[i]=fanum[arr[i]];
+        result=result+ arr[i];
+    }
+    console.log(result);
+    return result;
+}
 
 const clock = async () => {
     const respons = await fetch("https://api.dastyar.io/express/clock/current");
     const data = await respons.json();
-    let hour = new Date(data.current).getHours();
-    let minut = new Date(data.current).getMinutes();
-    showclock.innerText = `${hour}:${minut > 9 ? minut:"0"+minut}`;
+    let hour = farsi_number(String(new Date(data.current).getHours()));
+    let copyminut=new Date(data.current).getMinutes();
+    let minut = farsi_number(String(new Date(data.current).getMinutes()));
+    showclock.innerText = `${hour}:${copyminut > 9 ? minut:"۰"+minut}`;
 }
 clock();
 setInterval(clock,60000);
@@ -80,12 +92,12 @@ const tarikh=async ()=>{
     const data= await respons.json();
     let shamsiday=data.shamsi.dayInMonth;
     let shamsiMonth=data.shamsi.month;
-    let islamicday=data.islamicHijri.dayInMonth;
+    let islamicday=farsi_number(data.islamicHijri.dayInMonth);
     let islamicMonth=data.islamicHijri.month;
-    let islamicyear=data.islamicHijri.year;
-    let miladiday=data.miladi.dayInMonth;
+    let islamicyear=farsi_number(data.islamicHijri.year.slice(0,4));
+    let miladiday=farsi_number(data.miladi.dayInMonth);
     let miladiMonth=data.miladi.month;
-    let miladiyear=data.miladi.year;
+    let miladiyear=farsi_number(data.miladi.year);
     shamsitarikh.innerText=`${shamsiday} ${shamsiMonth}`;
     islamictarikh.innerText=`${islamicyear}/${islamicMonth}/${islamicday}`;
     miladitarikh.innerText=`${miladiyear}/${miladiMonth.slice(0,3)}/${miladiday}`;
@@ -94,12 +106,11 @@ tarikh();
 const weather=async ()=>{
     const respons=await fetch("https://api.dastyar.io/express/weather?lat=35.67194277&lng=51.42434403&lang=fa&theme=light");
     const data = await respons.json();
-    const dama=data[0].current;
-    const icondama=data[0].weather.icon;
+    const dama=farsi_number(String(parseInt(data[0].current)));
     const funwordweather=data[0].customDescription.text;
     const emojifunword=data[0].customDescription.emoji;
-    const maxdama=data[0].max;
-    const mindama=data[0].min;
+    const maxdama=farsi_number(String(parseInt(data[0].max)));
+    const mindama=farsi_number(String(parseInt(data[0].min)));
     showdama.innerText=`${dama}°`;
     showfunword.innerText=`${funwordweather} ${emojifunword}`;
     showmaxmin.innerText=`${maxdama}° حداکثر . °${mindama} حداقل`;
@@ -112,6 +123,5 @@ const weather=async ()=>{
     console.log(data);
 }
 weather();
-
 
 data_get();
