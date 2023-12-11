@@ -16,8 +16,8 @@
                 <h1>دست نویس</h1>
                 <i class='bx bxs-low-vision'></i>
             </div>
-            <div class="hieght">
-                <div class="SingelTodoList display-flex">
+            <ul>
+                <li class="SingelTodoList display-flex">
                     <div class="display-flex">
                         <input type="checkbox" class="input-check">
                         <p>danial saghiri</p>
@@ -26,8 +26,8 @@
                         <i class='bx bx-edit-alt'></i>
                         <i class='bx bx-trash'></i>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
             <form class="form-list">
                 <input type="text" class="input-list" placeholder="نوشتن تسک جدید">
                 <i class='bx bx-plus color-gray'></i>
@@ -48,15 +48,17 @@
                     <i class="bx bxs-grid"></i>
                     <p>دم دستی</p>
                 </a>
-                <a href="" class="application display-flex align-center">
-                    <img src="/assets/Images/photo_application.jpg" class="img-application">
+                <a href="https://www.shab.ir" class="application display-flex align-center">
+                    <img src="/assets/Images/logo-sign.png" class="img-application">
                     <p>شب</p>
                 </a>
-                <a href="" class="application display-flex align-center">
-                    <i class='bx bx-plus color-gray'></i>
+                <a href="https://www.varzesh3.com" class="application display-flex align-center">
+                    <img src="/assets/Images/varzesh3.jpg" class="img-application">
+                    <p>ورزش3</p>
                 </a>
                 <a href="" class="application display-flex align-center">
-                    <i class='bx bx-plus color-gray'></i>
+                    <img src="/assets/Images/W3schools.png" class="img-application">
+                    <p>W3schools</p>
                 </a>
                 <a href="" class="application display-flex align-center">
                     <i class='bx bx-plus color-gray'></i>
@@ -86,14 +88,11 @@
         </section>
         <section class="RightToLeft display-flex information  ">
             <div class="time">
-                <h2>22:31</h2>
-                <h3>11<span>آذر</span></h3>
+                <h2 id="timer"></h2>
+                <h3 id="shamsi_tarikh"></h3>
                 <div class="display-flex align-center font1">
-                    <p class="font1">
-                        <span class="color-gray">جمادی/<span>1445</span></span>
-                        <span class="color-gray">الاول/18</span>
-                    </p>
-                    <span class="miladi">2023/Dec/2</span>
+                    <span id="islamic"></span>
+                    <span id="miladi"></span>
                 </div>
                 <div class="display-flex align-center oghatvatimer">
                     <div class="display-flex  timer align-center font1">
@@ -108,11 +107,11 @@
             </div>
             <div class="weather">
                 <div class="display-flex align-center justy-center">
-                    <h2>12</h2>
+                    <h2 id="dama"></h2>
                     <i class='bx bx-cloud-snow'></i>
                 </div>
-                <p class="font1">بس ناجوانمردانه سرد ❄️</p>
-                <p class=" font1 color-gray">13 حداکثر . 12 حداقل</p>
+                <p class="font1" id="funword">بس ناجوانمردانه سرد ❄️</p>
+                <p class=" font1 color-gray" id="max_min_weather">13 حداکثر . 12 حداقل</p>
                 <div class="pishbini font1">
                     <span>پیش بینی</span>
                     <i class='bx bx-chevron-down'></i>
@@ -121,6 +120,7 @@
         </section>
     </article>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="/assets/Scripts/app.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -41,7 +42,9 @@ p{
 .display-flex {
     display: flex;
 }
-
+.bx{
+    cursor: pointer;
+}
 .todolist {
     width: 25%;
     height: 550px;
@@ -49,7 +52,7 @@ p{
     border-radius: 10px;
 }
 
-.hieght {
+ul {
     height: 77%;
     border-bottom: 1px solid rgb(179, 189, 199);
 }
@@ -61,8 +64,7 @@ p{
     cursor: pointer;
 }
 .bx-edit-alt , .bx-trash{
-    margin-top: 5px;
-    cursor: pointer;
+    display: none;
 }
 .input-check{
     appearance: none;
@@ -85,9 +87,13 @@ p{
     align-items: center;
     border: 1px solid rgb(179, 189, 199);
     border-radius: 12px;
+    position: relative;
     justify-content: space-between;
+    border-bottom: 2px solid green;
 }
-
+.SingelTodoList:hover .bx-edit-alt ,.SingelTodoList:hover .bx-trash{
+    display: inline;
+}
 .form-list {
     box-shadow: 1px 1px 10px gray;
     display: flex;
@@ -159,8 +165,8 @@ p{
     border: 1px solid lightseagreen;
 }
 .img-application{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 .information {
@@ -176,6 +182,7 @@ p{
 .time , .weather{
     width: 50%;
     height: 65%;
+    padding-left: 3px;
     text-align: center;
     border-bottom:1px solid rgb(179, 189, 199);
     border-left: 1px solid rgb(179, 189, 199);
@@ -183,7 +190,7 @@ p{
 .weather{
     border-left: none;
 }
-.miladi{
+#miladi{
     width: 50%;
     color: gray;
     border-right: 1px solid rgb(179, 189, 199);
@@ -209,8 +216,8 @@ p{
     margin-top: 22px;
 }
 .font1{
-    margin-top: 4px;
-    font-size: 12px;
+    margin-top: 8px;
+    font-size: 10px;
     font-weight: bolder;
 }
 @font-face {
