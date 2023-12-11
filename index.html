@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <article class="container display-flex setting">
+        <i class='bx bxs-cog'></i>
+        <i class='bx bx-user'></i>
+    </article>
     <article class="container display-flex">
         <section class="RightToLeft todolist">
             <div class="display-flex title-todolist">
@@ -20,7 +24,7 @@
                 <li class="SingelTodoList display-flex">
                     <div class="display-flex">
                         <input type="checkbox" class="input-check">
-                        <p>danial saghiri</p>
+                        <p>کار شماره اول من</p>
                     </div>
                     <div>
                         <i class='bx bx-edit-alt'></i>
@@ -33,9 +37,9 @@
                 <i class='bx bx-plus color-gray'></i>
             </form>
         </section>
-        <section class="RightToLeft manege">
+        <section class="RightToLeft">
             <div class="sereach">
-                <div class="display-flex all-sreach">
+                <div class="display-flex sereachbox">
                     <div class="display-flex align-center">
                         <iconify-icon icon="devicon:google"></iconify-icon>
                         <input type="text" class="input-sereach" placeholder="جستجو در گوگل">
@@ -49,16 +53,16 @@
                     <p>دم دستی</p>
                 </a>
                 <a href="https://www.shab.ir" class="application display-flex align-center">
-                    <img src="/assets/Images/logo-sign.png" class="img-application">
-                    <p>شب</p>
+                    <img src="/assets/Images/logo-sign.png" class="application__img">
+                    <p class="color-gray">شب</p>
                 </a>
                 <a href="https://www.varzesh3.com" class="application display-flex align-center">
-                    <img src="/assets/Images/varzesh3.jpg" class="img-application">
-                    <p>ورزش3</p>
+                    <img src="/assets/Images/varzesh3.jpg" class="application__img">
+                    <p class="color-gray">ورزش3</p>
                 </a>
                 <a href="" class="application display-flex align-center">
-                    <img src="/assets/Images/W3schools.png" class="img-application">
-                    <p>W3schools</p>
+                    <img src="/assets/Images/W3schools.png" class="application__img">
+                    <p class="color-gray">W3schools</p>
                 </a>
                 <a href="" class="application display-flex align-center">
                     <i class='bx bx-plus color-gray'></i>
@@ -86,33 +90,32 @@
                 </a>
             </div>
         </section>
-        <section class="RightToLeft display-flex information  ">
+        <section class="RightToLeft display-flex information_time_weather  ">
             <div class="time">
-                <h2 id="timer"></h2>
+                <h2 id="clock"></h2>
                 <h3 id="shamsi_tarikh"></h3>
-                <div class="display-flex align-center font1">
+                <div class="display-flex align-center">
                     <span id="islamic"></span>
                     <span id="miladi"></span>
                 </div>
-                <div class="display-flex align-center oghatvatimer">
-                    <div class="display-flex  timer align-center font1">
+                <div class="display-flex align-center justy-around">
+                    <div class="display-flex  timer align-center">
                         <span>تایمر</span>
                         <i class='bx bx-chevron-down'></i>
                     </div>
-                    <div class="display-flex  oghat align-center font1 ">
+                    <div class="display-flex  oghatsharei align-center">
                         <span>اوقات شرعی</span>
                         <i class='bx bx-chevron-down'></i>
                     </div>
                 </div>
             </div>
             <div class="weather">
-                <div class="display-flex align-center justy-center">
-                    <h2 id="dama"></h2>
-                    <i class='bx bx-cloud-snow'></i>
+                <div class="display-flex align-center justy-center " id="dama">
+                    <h2 class="color-gray" id="text__dama"></h2>
                 </div>
-                <p class="font1" id="funword">بس ناجوانمردانه سرد ❄️</p>
-                <p class=" font1 color-gray" id="max_min_weather">13 حداکثر . 12 حداقل</p>
-                <div class="pishbini font1">
+                <h3 id="funword">بس ناجوانمردانه سرد ❄️</h3>
+                <p class="color-gray" id="max_min_weather">13 حداکثر . 12 حداقل</p>
+                <div class="pishbini">
                     <span>پیش بینی</span>
                     <i class='bx bx-chevron-down'></i>
                 </div>

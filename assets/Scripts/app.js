@@ -3,15 +3,14 @@ const ulelment = document.querySelector("ul");
 const input_list = document.querySelector(".input-list");
 const form_list = document.querySelector(".form-list");
 const iconadd = document.querySelector(".bx-plus");
-const showtimer = document.getElementById("timer");
+const showclock = document.getElementById("clock");
 const shamsitarikh=document.getElementById("shamsi_tarikh");
 const islamictarikh=document.getElementById("islamic");
 const miladitarikh=document.getElementById("miladi");
-const showdama=document.getElementById("dama");
+const showdama=document.getElementById("text__dama");
 const showfunword=document.getElementById("funword");
 const showmaxmin=document.getElementById("max_min_weather");
-
-
+const damaelement=document.querySelector("#dama");
 
 
 
@@ -59,20 +58,23 @@ ulelment.addEventListener("click", function (e) {
 function data_save() {
     localStorage.setItem("data", ulelment.innerHTML);
 }
+function data_get(){
+    ulelment.innerHTML = localStorage.getItem("data");
+}
 
 
 
 
 
-const timer = async () => {
+const clock = async () => {
     const respons = await fetch("https://api.dastyar.io/express/clock/current");
     const data = await respons.json();
     let hour = new Date(data.current).getHours();
     let minut = new Date(data.current).getMinutes();
-    showtimer.innerText = `${hour}:${minut > 9 ? minut:"0"+minut}`;
+    showclock.innerText = `${hour}:${minut > 9 ? minut:"0"+minut}`;
 }
-timer();
-setInterval(timer,60000);
+clock();
+setInterval(clock,60000);
 const tarikh=async ()=>{
     const respons= await fetch("https://kaaryar0506reactblog.liara.run/current/time");
     const data= await respons.json();
@@ -86,7 +88,7 @@ const tarikh=async ()=>{
     let miladiyear=data.miladi.year;
     shamsitarikh.innerText=`${shamsiday} ${shamsiMonth}`;
     islamictarikh.innerText=`${islamicyear}/${islamicMonth}/${islamicday}`;
-    miladitarikh.innerText=`${miladiyear}/${miladiday}/${miladiMonth.slice(0,3)}`;
+    miladitarikh.innerText=`${miladiyear}/${miladiMonth.slice(0,3)}/${miladiday}`;
 }
 tarikh();
 const weather=async ()=>{
@@ -100,11 +102,16 @@ const weather=async ()=>{
     const mindama=data[0].min;
     showdama.innerText=`${dama}°`;
     showfunword.innerText=`${funwordweather} ${emojifunword}`;
-    showmaxmin.innerText=`${maxdama} حداکثر . ${mindama} حداقل`
+    showmaxmin.innerText=`${maxdama}° حداکثر . °${mindama} حداقل`;
+    if(new Date().getHours() >= 5 && new Date().getHours()<=18){
+        damaelement.innerHTML+=`<img src="/assets/Images/sun.png" class="weather__img">`
+    }
+    else{
+        damaelement.innerHTML+=`<img src="/assets/Images/night.png" class="weather__img">`;
+    }
     console.log(data);
 }
 weather();
 
 
-
-ulelment.innerHTML = localStorage.getItem("data");
+data_get();
