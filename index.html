@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/font.css">
+    <link rel="stylesheet" href="/assets/styles/defult.css">
+    <link rel="stylesheet" href="/assets/styles/todo.css">
+    <link rel="stylesheet" href="/assets/styles/sereach.css">
+    <link rel="stylesheet" href="/assets/styles/applications.css">
+    <link rel="stylesheet" href="/assets/styles/time&&weather.css">
+    
 </head>
 
 <body>
-    <article class="container display-flex setting">
+    <article class="container display-flex user_setting">
         <i class='bx bxs-cog'></i>
         <i class='bx bx-user'></i>
     </article>
@@ -20,7 +26,7 @@
                 <h1>دست نویس</h1>
                 <i class='bx bxs-low-vision'></i>
             </div>
-            <ul>
+            <ul class="list">
                 <li class="SingelTodoList display-flex">
                     <div class="display-flex">
                         <input type="checkbox" class="input-check">
@@ -98,7 +104,7 @@
                     <span id="islamic"></span>
                     <span id="miladi"></span>
                 </div>
-                <div class="display-flex align-center justy-around">
+                <div class="display-flex align-center justify-around">
                     <div class="display-flex  timer align-center">
                         <span>تایمر</span>
                         <i class='bx bx-chevron-down'></i>
@@ -110,7 +116,7 @@
                 </div>
             </div>
             <div class="weather">
-                <div class="display-flex align-center justy-center " id="dama">
+                <div class="display-flex align-center justify-center " id="dama">
                     <h2 class="color-gray" id="text__dama"></h2>
                 </div>
                 <h3 id="funword">بس ناجوانمردانه سرد ❄️</h3>
@@ -123,7 +129,12 @@
         </section>
     </article>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="/assets/Scripts/app.js"></script>
+    <script src="/assets/Scripts/todo.js"></script>
+    <script src="/assets/Scripts/clock.js"></script>
+    <script src="/assets/Scripts/tarikh_shamsi.js"></script>
+    <script src="/assets/Scripts/tarikh_Islamic.js"></script>
+    <script src="/assets/Scripts/tarikh_miladi.js"></script>
+    <script src="/assets/Scripts/weather.js"></script>
 </body>
 
 </html>

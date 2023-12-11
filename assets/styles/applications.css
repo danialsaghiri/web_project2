@@ -1,0 +1,25 @@
+.applications{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.application{
+    width: 15%;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 30px;
+    color:var(--second-color) ;
+    border: 1px solid white;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.application:hover{
+    border: 1px solid lightseagreen;
+}
+.application__img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

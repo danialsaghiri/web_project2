@@ -1,0 +1,33 @@
+.sereach{
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom:16px ;
+}
+.sereachbox{
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 10px gray;
+    background-color: var(--background-items-color);
+    padding: 12px;
+    border-radius: 30px;
+}
+.input-sereach{
+    height: 30px;
+    border: none;
+    font-family: Vazirmatn;
+    outline: none;
+    font-weight: bold;
+    padding: 0 8px;
+    transition: 0.3s;
+    min-width: 350px;
+    background-color:var(--background-items-color);
+}
+.bx-search-alt-2{
+    padding: 5px 15px;
+    background-color: var(--second-color);
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+}
