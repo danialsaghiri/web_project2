@@ -1,4 +1,4 @@
-const shamsitarikh=document.getElementById("shamsi_tarikh");
+const shamsitarikh=document.querySelector(".time__shamsi");
 
 
 

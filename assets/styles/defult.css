@@ -1,4 +1,4 @@
-* {
+* ,*::after,*::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,17 +15,6 @@ body {
     --background-items-color:rgb(222, 225, 228);
     --border-color: rgb(179, 189, 199);
 }
-h1 {
-    font-weight: bolder;
-    font-size: 1.5rem;
-}
-h2{
-    font-size: 1.5rem;
-    margin: 5px;
-}
-p{
-    font-size: 15px;
-}
 .display-flex {
     display: flex;
 }
@@ -33,10 +22,13 @@ p{
     justify-content: center;
 }
 .justify-around{
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .align-center{
     align-items: center;
+}
+.flex-direction{
+    flex-direction: row;
 }
 .bx{
     cursor: pointer;
@@ -53,7 +45,7 @@ p{
     margin: 0 auto;
     direction: rtl;
 }
-.user_setting{
+.user-setting{
     direction: ltr;
     padding: 10px;
     gap: 8px;

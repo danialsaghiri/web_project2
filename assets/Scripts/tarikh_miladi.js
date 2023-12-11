@@ -1,4 +1,4 @@
-const miladitarikh=document.getElementById("miladi");
+const miladitarikh=document.querySelector(".time__miladi");
 
 
 const tarikh_miladi=async ()=>{

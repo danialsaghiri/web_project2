@@ -1,6 +1,6 @@
-const ulelment = document.querySelector("ul");
-const input_list = document.querySelector(".input-list");
-const form_list = document.querySelector(".form-list");
+const ulelment = document.querySelector(".list");
+const input_list = document.querySelector(".list__input");
+const form_list = document.querySelector(".list__form");
 const iconadd = document.querySelector(".bx-plus");
 
 
@@ -27,7 +27,7 @@ const todolist = () => {
         lielement.classList.add("SingelTodoList", "display-flex");
         lielement.innerHTML = `
         <div class="display-flex">
-            <input type="checkbox" class="input-check">
+            <input type="checkbox" class="SingelTodoList__input-check">
             <p>${inputvalue}</p>
         </div>
         <div>

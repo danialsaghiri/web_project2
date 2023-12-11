@@ -1,9 +1,9 @@
 
 
-const showdama=document.getElementById("text__dama");
-const showfunword=document.getElementById("funword");
-const showmaxmin=document.getElementById("max_min_weather");
-const damaelement=document.querySelector("#dama");
+const showdama=document.querySelector(".dama__text");
+const showfunword=document.querySelector(".weather__funword");
+const showmaxmin=document.querySelector(".weather__max-min");
+const damaelement=document.querySelector(".dama");
 
 
 const weather=async ()=>{

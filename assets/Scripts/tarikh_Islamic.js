@@ -1,4 +1,4 @@
-const islamictarikh=document.getElementById("islamic");
+const islamictarikh=document.querySelector(".time__islamic");
 
 
 

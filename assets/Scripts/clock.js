@@ -1,6 +1,6 @@
 
 
-const showclock = document.getElementById("clock");
+const showclock = document.querySelector(".time__clock");
 function farsi_number(ennum){
     const fanum="۰۱۲۳۴۵۶۷۸۹";
     let arr=[];

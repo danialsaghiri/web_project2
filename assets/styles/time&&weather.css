@@ -1,4 +1,4 @@
-.information_time_weather {
+.information-time-weather {
     width: 25%;
     background-color: white;
     height: 270px;
@@ -12,6 +12,10 @@
     border-bottom:1px solid var(--border-color);
     border-left: 1px solid var(--border-color);
 }
+.time__clock , .dama__text{
+    font-size: 1.5rem;
+    margin: 5px;
+}
 .weather{
      width: 50%;
     height: 65%;
@@ -21,23 +25,23 @@
     border-left: 1px solid var(--border-color);
     border-left: none;
 }
-#clock{
+.time__clock{
     color: #3565ae;
 }
-#islamic,#miladi{
+.time__islamic,.time__miladi{
     margin-top: 8px;
     font-size: 10px;
-    width: 45%;
+    width: 50%;
     font-weight: bolder;
     color: gray;
 }
-#miladi{
+.time__miladi{
     direction: ltr;
     border-right: 1px solid var(--border-color);
 }
-.timer , .oghatsharei , .pishbini{
+.time__timer , .time__oghatsharei , .weather__pishbini{
     border: 1px solid var(--border-color);
-    padding: 5px;
+    padding: 8px;
     border-radius: 15px;
     color:rgb(102, 134, 168) ;
     margin-top: 8px;
@@ -45,16 +49,15 @@
     font-weight: bolder;
     cursor: pointer;
 }
-.pishbini{
-    width: 60%;
+.weather__pishbini{
     margin: 15px 25px;
 }
-#funword{
+.weather__funword{
     margin-top: 5px;
     font-size: 12px;
     font-weight: bolder;
 }
-#max_min_weather{
+.weather__max-min{
     margin-top: 20px;
     font-size: 10px;
     font-weight: bolder;

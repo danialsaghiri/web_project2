@@ -4,7 +4,7 @@
     background-color: white;
     border-radius: 10px;
 }
-.title-todolist{
+.todolist__title{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border-color);
@@ -35,7 +35,7 @@
 .SingelTodoList:hover .bx-edit-alt ,.SingelTodoList:hover .bx-trash{
     display: inline;
 }
-.input-check{
+.SingelTodoList__input-check{
     appearance: none;
     height: 10px;
     border: 1px solid green;
@@ -47,7 +47,7 @@
 .bx-edit-alt , .bx-trash{
     display: none;
 }
-.form-list {
+.list__form {
     box-shadow: 1px 1px 10px gray;
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@
     margin: 10px;
     border: 1px solid var(--border-color);
 }
-.input-list{
+.list__input{
     height: 30px;
     border: none;
     font-family: Vazirmatn;
@@ -65,4 +65,8 @@
     font-weight: bold;
     padding: 0 8px;
     transition: 0.3s;
+}
+.todolist__title--text{
+    font-weight: bolder;
+    font-size: 1.5rem;
 }

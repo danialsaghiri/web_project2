@@ -18,6 +18,10 @@
 .application:hover{
     border: 1px solid lightseagreen;
 }
+.application__text--details{
+    color: gray;
+    font-size: 15px;
+}
 .application__img{
     width: 40px;
     height: 40px;
